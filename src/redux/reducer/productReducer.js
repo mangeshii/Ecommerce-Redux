@@ -1,4 +1,4 @@
-import {SET_PRODUCTS,SELECTED_PRODUCT,REMOVE_SELECTED_PRODUCT } from "../constants/action_types";
+import {SET_PRODUCTS,SELECTED_PRODUCT,REMOVE_SELECTED_PRODUCT } from "../constants/actionTypes";
 
 const initialState = {
     products: {
