@@ -1,12 +1,12 @@
 import {SET_PRODUCTS,SELECTED_PRODUCT,REMOVE_SELECTED_PRODUCT } from "../constants/actionTypes";
 
 const initialState = {
-    products: {
+    products:[ {
         id: 1,
         title: 'Mac Mini M1',
         category: 'Desktop'
 
-    }
+    },]
 }
 
 export const ProductReducer = (state=initialState, action) => {
