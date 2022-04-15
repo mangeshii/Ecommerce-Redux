@@ -37,7 +37,10 @@ const ProductDetails = () => {
         <>
 
             <div style={{ marginTop: '100px' }} className='ui grid container'>
-                {Object.keys(product).length === 0 ? 'Loading...' : (
+                {Object.keys(product).length === 0 ? (
+                    <div class="ui active centered inline loader">
+                   </div>
+                ) : (
                     <div className="ui placeholder segment">
                         <div className="ui two column stackable center aligned grid">
                             <div className="ui vertical divider">AND</div>
