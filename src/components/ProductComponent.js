@@ -5,36 +5,34 @@ import '../semantic-ui/style.css'
 
 const ProductComponent = () => {
     const products = useSelector(state => state.ProductReducer.products);
-    console.log(products)
 
-    const renderList=products.map((product)=>{
-        const {id,title,price,category,image}=product
-       
+    const renderList = products.map((product,index) => {
+        const { id, title, price, category, image } = product
+
         return (
             <>
-                
-                <div className="four wide column">
+                <div key={index} className="four wide column">
                     <Link to={`/product/${id}`}>
-                    <div className="ui link cards">
-                        <div className="card">
-                            <div className="image">
-                                <img src={image}></img>
-                            </div>
-                            <div className="content">
-                                <div className="header">{title}</div>
-                                <div className="price">{`$ ${price}`}</div>
-                                <div className="category">{category}</div>
+                        <div className="ui link cards">
+                            <div className="card">
+                                <div className="image">
+                                    <img src={image}></img>
+                                </div>
+                                <div className="content">
+                                    <div className="header">{title}</div>
+                                    <div className="price">{`$ ${price}`}</div>
+                                    <div className="category">{category}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </Link>
                 </div>
             </>
-    
-        )
-    })
-    return <>{renderList}</>
+)
+})
+return <>{renderList}</>
 
 }
 
 export default ProductComponent
+
