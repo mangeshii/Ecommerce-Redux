@@ -24,7 +24,10 @@ const ProductListing = () => {
     return (
         <>
             <div className="ui grid container">
+                <div className="ui stackable centered four column grid">
+
                 <ProductComponent />
+                </div>
             </div>
         </>
     )

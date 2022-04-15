@@ -1,4 +1,7 @@
 
+  .ui.grid{
+    margin-top: 2%;
+  }
   .ui.cards > .card > .image {
     height: 250px;
     padding: 20px;

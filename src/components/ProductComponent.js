@@ -11,9 +11,9 @@ const ProductComponent = () => {
 
         return (
             <>
-                <div key={index} className="four wide column">
+                <div key={index} className="ui  four wide column" >
                     <Link to={`/product/${id}`}>
-                        <div className="ui link cards">
+                        <div className="ui centered link cards" >
                             <div className="card">
                                 <div className="image">
                                     <img src={image}></img>
