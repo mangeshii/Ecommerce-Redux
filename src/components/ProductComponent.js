@@ -16,7 +16,7 @@ const ProductComponent = () => {
                         <div className="ui centered link cards" >
                             <div className="card">
                                 <div className="image">
-                                    <img src={image}></img>
+                                    <img src={image} alt={title}/>
                                 </div>
                                 <div className="content">
                                     <div className="header">{title}</div>
